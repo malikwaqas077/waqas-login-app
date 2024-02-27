@@ -1,0 +1,55 @@
+/* Profile.module.css */
+.profileContainer {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 800px;
+  min-width: 400px;
+  margin: 0 auto;
+  position: absolute; /* Position it absolutely relative to the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* This will center the form */
+  }
+  
+  .title {
+    color: #333; /* Dark grey color for the text */
+    margin-bottom: 0.5em;
+  }
+  
+  .info {
+    background: #fff; /* White background for the info area */
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 1em;
+    color: #555; /* Slightly darker grey for the info text */
+  }
+  
+  .logoutButton {
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #dc3545; /* Bootstrap's danger color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logoutButton:hover {
+    background-color: #c82333; /* A slightly darker red */
+  }
+  .errorMessage {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    /* No need for animation since we're redirecting */
+  }
